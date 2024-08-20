@@ -28,11 +28,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- font awesome kit -->
-    <script src="https://kit.fontawesome.com/77308d2747.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/77308d2747.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .paragraph-font {
+        font-family: 'Poppins', sans-serif;
+      }
+      .heading-font {
+        font-family: 'EB Garamond', serif;
+      }
+    </style>
   </head>
   <body>
     <!-- header section -->
     <header class="container mx-auto my-6">
+      <!-- Navbar section -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -42,17 +63,20 @@
                 class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
               </svg>
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-normal text-[#707070]">
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-normal text-[#707070]"
+            >
               <li><a>Home</a></li>
               <li><a>Services</a></li>
               <li><a>Cases</a></li>
@@ -60,25 +84,67 @@
               <li><a>Contact Us</a></li>
             </ul>
           </div>
-          <a class=""><img src="images/logo2.png" alt=""></a>
+          <a class=""><img src="images/logo2.png" alt="" /></a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-xl font-normal text-[#707070]">
-              <li><a>Home</a></li>
-              <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
-              <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
-              <li><a>Blog <i class="fa-solid fa-greater-than"></i></a></li>
-              <li><a>Contact Us <i class="fa-solid fa-greater-than"></i></a></li>
+          <ul
+            class="menu menu-horizontal px-1 text-xl font-normal text-[#707070]"
+          >
+            <li><a>Home</a></li>
+            <li>
+              <a>Services <i class="fa-solid fa-greater-than"></i></a>
+            </li>
+            <li>
+              <a>Cases <i class="fa-solid fa-greater-than"></i></a>
+            </li>
+            <li>
+              <a>Blog <i class="fa-solid fa-greater-than"></i></a>
+            </li>
+            <li>
+              <a>Contact Us <i class="fa-solid fa-greater-than"></i></a>
+            </li>
           </ul>
         </div>
         <div class="navbar-end">
           <a class="btn bg-[#b68c5a] text-white">Free Consultation</a>
         </div>
       </div>
+
+      <!-- Hero section -->
+      <div
+        class="hero min-h-screen mt-10 rounded-xl"
+        style="background-image: url('images/banner.png')"
+      >
+        <div class="hero-overlay bg-opacity-40 rounded-xl"></div>
+        <div class="hero-content text-center">
+          <div class="">
+            <h1 class="mb-5 text-6xl font-extrabold text-white heading-font">
+              We Provide Effective <br />Legal Solutions
+            </h1>
+            <p class="mb-5 text-[#E7E7E7] paragraph-font">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority <br />
+              have suffered alteration in some form, by injected humour.
+            </p>
+            <div>
+              <input
+                type="text"
+                placeholder="Search your services"
+                class="input input-bordered w-full max-w-xs"
+              />
+              <button
+                class="btn px-10 border-none mt-6 md:ml-6 text-white bg-[#B68C5A]"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- main section -->
-     <main></main>
-     <!-- Footer section -->
-      <footer></footer>
+    <main></main>
+    <!-- Footer section -->
+    <footer></footer>
   </body>
 </html>
